@@ -94,4 +94,8 @@ function keyPressed(){
 	if(keyCode === UP_ARROW){
 		packageSprite.velocityY=3
 	}
+	
+	if (keyCode === DOWN_ARROW) { 
+		Matter.Body.setStatic(packageBody,false);
+	}
 }
